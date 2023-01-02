@@ -15,9 +15,15 @@ typedef struct _node_
     void *data;
 } node;
 
-void node_new(node *, int); // data = malloc(size);
+void node_new(node *, int, void *); // data = malloc(size);
 
 node *node_del(node *); // free(data); return next;
+
+/**
+ * @brief linkedlist stores nodes
+ * head is the first node
+ * tail is the last
+ */
 
 typedef struct
 {
